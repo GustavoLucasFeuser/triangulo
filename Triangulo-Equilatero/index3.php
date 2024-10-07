@@ -18,7 +18,7 @@ $lista = Triangulo::listar($tipo, $busca); // Busca os triângulos conforme a bu
 
 <head>
     <title>Formulário de criação de formas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 </head>
 
 <body>

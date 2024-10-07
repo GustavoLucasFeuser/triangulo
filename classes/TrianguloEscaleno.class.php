@@ -98,4 +98,17 @@ class TrianguloEscaleno
             throw new Exception("Erro ao incluir triângulo escaleno: " . $e->getMessage());
         }
     }
+
+    // Método para calcular o perímetro
+    public function calcularPerimetro()
+    {
+        return $this->lado1 + $this->lado2 + $this->lado3;
+    }
+
+    // Método para calcular a área usando a fórmula de Heron
+    public function calcularArea()
+    {
+        $semiperimetro = $this->calcularPerimetro() / 2;
+        return sqrt($semiperimetro * ($semiperimetro - $this->lado1) * ($semiperimetro - $this->lado2) * ($semiperimetro - $this->lado3));
+    }
 }
